@@ -11,6 +11,7 @@ nav{
     margin: 0%;
     background-color: black;
     height: 7vh;
+    box-shadow: 5px 10px 8px #888888;
 }
 
 footer{
@@ -22,16 +23,24 @@ footer{
     background-color: black;
     justify-content: center;
     align-items: center;
+    box-shadow: 5px -10px 8px #888888;
 }
 
 .navLink{
     color: white;
+    text-decoration: none;
+    border-radius: 15px;
 }
 
 .navList{
-    font-size: 2.5vh;
+    padding-left: 0%;
+    font-size: 4.2vw;
     display: flex;
     justify-content: space-evenly;
+}
+
+.navLink:hover {
+    background-color: grey;
 }
 /* Below CSS will contain classes and ID's which will change depending on the page that is being viewed */
 
@@ -39,7 +48,6 @@ footer{
 
 #HomePageMain{
     height: 88vh;
-    background-color: white;
     display: flex;
     flex-direction: column;
 }
@@ -77,6 +85,67 @@ footer{
 
 
 /* media query used for desktop (lots of things will need decreasing in size) */
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
 
+    .navLink{
+        color: white;
+        text-decoration: none;
+        border-radius: 15px;
+    }
+
+    .navList{
+        font-size: 2vw;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    
+    nav{
+        padding-bottom: 1%;
+        background-color: black;
+        height: 7vh;
+        box-shadow: 5px 10px 8px #888888;
+    }
+    
+    footer{
+        display: flex;
+        height: 6vh;
+        color: white;
+        font-size: 2vh;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 5px -10px 8px #888888;
+        margin-top: auto;
+    }
+    /* Home Page */
+
+    #HomePageMain{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #HomeDiv{
+        justify-self: flex-start;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #HomeImage{
+        align-self: center;
+        padding: 5%;
+        width: 15%;
+        height: 15%;
+
+    }
+
+    #HomeArticle{
+        font-size: 2.5vh;
+    }
 }
