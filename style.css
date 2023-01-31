@@ -172,4 +172,22 @@ footer{
     #HomeArticle{
         font-size: 2.5vh;
     }
+
+    #HomeGif{
+        align-self: center;
+        width: 40%;
+        height: 40%;
+    }
+
+    /* About Me */
+    .AboutMeArticle{
+        font-size: 3vh;
+    }
+
+    .AboutMeImg{
+        align-self: center;
+        border-radius: 10px;
+        height: 25%;
+        width: 25%;
+    }
 }
