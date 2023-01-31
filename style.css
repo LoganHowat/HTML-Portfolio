@@ -1,4 +1,4 @@
-/* styling used for nav and footer as they will remain constant throughout the project */
+/* styling used for nav and footer as they will remain constant throughout the project unless screen size is changed */
 
 body{
     display: flex;
@@ -105,6 +105,33 @@ footer{
     border-radius: 10px;
 }
 
+/* Portfolio */
+
+#PortfolioMain{
+    display: flex;
+    flex-direction: column;
+}
+
+#PortfolioTitle{
+    text-align: center;
+    font-size: 4vh;
+    font-family: monospace;
+}
+
+.PortfolioArticle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: monospace;
+}
+
+.PortfolioImg{
+    border-radius: 40px;
+}
+
 
 
 
@@ -190,4 +217,15 @@ footer{
         height: 25%;
         width: 25%;
     }
+
+    /* Portfolio */
+    .PortfolioArticle{
+        font-size: 2vw;
+    }
+
+    .PortfolioImg{
+        width: 40%;
+        height: 40%;
+    }
+
 }
