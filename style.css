@@ -10,20 +10,20 @@ body{
 nav{
     margin: 0%;
     height: 7vh;
-    box-shadow: 5px 10px 8px #888888;
-    animation: colour_changing 10s infinite;
+    box-shadow: 0px 5px 10px rgb(88, 88, 88);
+    background-color: black;
 }
 
 footer{
     display: flex;
     height: 5vh;
     color: white;
-    margin-top: 0%;
     font-size: 2vh;
     justify-content: center;
     align-items: center;
-    box-shadow: 5px -10px 8px #888888;
-    animation: colour_changing 10s infinite;
+    box-shadow: 0px -5px 10px rgb(88, 88, 88);
+    background-color: black;
+    margin-top: auto;
 }
 
 .navLink{
@@ -40,14 +40,14 @@ footer{
 }
 
 .navLink:hover {
-    color: black;
+    color: green;
 }
 /* Below CSS will contain classes and ID's which will change depending on the page that is being viewed */
 
 /* Home Page */
 
 #HomePageMain{
-    height: 88vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -69,15 +69,7 @@ footer{
     margin-top: 0%;
     text-align: center;
     font-size: 5vh;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-@keyframes colour_changing {
-    0% {background-color: purple;}
-    25% {background-color: green;}
-    50% {background-color: blue;}
-    75% {background-color: red;}
-    100% {background-color: purple;}
+    font-family: monospace;
 }
 
 #HomeArticle{
@@ -85,13 +77,12 @@ footer{
     padding-right: 7%;
     text-align: center;
     font-size: 2vh;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: monospace;
 }
 
 
 /* Abou Me Page */
 #AboutMeMain{
-    height: 88vh;
     display: flex;
     flex-direction: column;
 }
@@ -99,11 +90,19 @@ footer{
 #AboutMeTitle{
     align-self: center;
     font-size: 4vh;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: monospace;
 }
 
-#AboutMeArticle{
-    font-family: Arial, Helvetica, sans-serif;
+.AboutMeArticle{
+    font-family: monospace;
+    align-self: center;
+    font-size: 2.2vh;
+    text-align: center;
+}
+
+.AboutMeImg{
+    align-self: center;
+    border-radius: 10px;
 }
 
 
