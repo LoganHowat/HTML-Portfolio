@@ -9,9 +9,9 @@ body{
 
 nav{
     margin: 0%;
-    background-color: black;
     height: 7vh;
     box-shadow: 5px 10px 8px #888888;
+    animation: colour_changing 10s infinite;
 }
 
 footer{
@@ -20,10 +20,10 @@ footer{
     color: white;
     margin-top: 0%;
     font-size: 2vh;
-    background-color: black;
     justify-content: center;
     align-items: center;
     box-shadow: 5px -10px 8px #888888;
+    animation: colour_changing 10s infinite;
 }
 
 .navLink{
@@ -40,7 +40,7 @@ footer{
 }
 
 .navLink:hover {
-    background-color: grey;
+    color: black;
 }
 /* Below CSS will contain classes and ID's which will change depending on the page that is being viewed */
 
@@ -72,6 +72,14 @@ footer{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+@keyframes colour_changing {
+    0% {background-color: purple;}
+    25% {background-color: green;}
+    50% {background-color: blue;}
+    75% {background-color: red;}
+    100% {background-color: purple;}
+}
+
 #HomeArticle{
     padding-left: 7%;
     padding-right: 7%;
@@ -80,6 +88,23 @@ footer{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+/* Abou Me Page */
+#AboutMeMain{
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#AboutMeTitle{
+    align-self: center;
+    font-size: 4vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#AboutMeArticle{
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 
 
