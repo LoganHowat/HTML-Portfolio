@@ -83,16 +83,8 @@ footer{
     font-family: monospace;
 }
 
-#HomeArticle{
-    padding-left: 7%;
-    padding-right: 7%;
-    text-align: center;
-    font-size: 2vh;
-    font-family: monospace;
-}
 
-
-/* Abou Me Page */
+/* About Me Page */
 #AboutMeMain{
     display: flex;
     flex-direction: column;
@@ -111,9 +103,16 @@ footer{
     text-align: center;
 }
 
-.AboutMeImg{
+#AboutMeMovieGIF{
     align-self: center;
-    border-radius: 10px;
+    height: 30%;
+    width: 30%;
+}
+
+#AboutMeGameGIF{
+    margin: 0%;
+    height: 30%;
+    width: 50%;
 }
 
 /* Portfolio */
@@ -137,10 +136,42 @@ footer{
     padding-left: 5%;
     padding-right: 5%;
     font-family: monospace;
+    font-size: 2.25vh;
 }
 
 .PortfolioImg{
     border-radius: 40px;
+}
+
+/* Experience */
+
+#ExperienceTitle{
+    text-align: center;
+    font-family:monospace ;
+    font-size: 4vh;
+}
+
+.ExpArticle{
+    display: flex;
+    flex-direction: column;
+    font-family: monospace;
+    font-size: 2.25vh;
+}
+
+#ExperienceImagePython{
+    height: 70%;
+    width: 70%;
+    align-self: center;
+}
+
+#ExperienceImageJS{
+    height: 35%;
+    width: 35%;
+    align-self: center;
+}
+
+.ExperienceSubHead{
+    align-self: center;
 }
 
 
@@ -217,10 +248,6 @@ footer{
         width: 15%;
         height: 15%;
 
-    }
-
-    #HomeArticle{
-        font-size: 2.5vh;
     }
 
     #HomeGif{
